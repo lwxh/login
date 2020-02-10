@@ -1,0 +1,83 @@
+strong {
+    color:white !important;
+    font-size: 24px !important;
+    word-spacing: 4px;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.line-seprate{
+    margin-top:1rem !important;
+}
+
+.header__navbar ul li a{
+    padding-top:20px !important;
+}
+
+.js-item-menu .quantity{
+    position: absolute;
+    display: inline-block;
+    top: -4px;
+    right: -22px;
+    height: 17px;
+    width: 30px;
+    line-height: 15px;
+    text-align: center;
+    background: #ff4b5a;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 12px;
+}
+
+.header-desktop3{
+    background-color: #3381c3;
+}
+
+.header__navbar ul li a{
+    color:#fff;
+}
+
+.header__navbar ul li a:hover{
+    color:#ff8300;
+}
+.bot-line{
+    background-color:#ff8300;
+}
+
+        .status{
+            width:60px;
+            height:28px;
+            color:white;
+            border-radius: 4px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .layui-table td{
+            cursor:pointer !important;
+        }
+        
+        body .layui-layer-molv .layui-layer-btn{border-top:1px solid #E9E7E7}
+        body .layui-layer-molv .layui-layer-btn .layui-layer-btn0{border:none;background-color:#999;color:white;}
+
+        body .layui-layer-alert .layui-layer-title{background:#c00; color:#fff; border: none;}
+        body .layui-layer-alert .layui-layer-btn{border-top:1px solid #E9E7E7}
+        body .layui-layer-alert .layui-layer-btn a{background:#333;}
+        body .layui-layer-alert .layui-layer-btn .layui-layer-btn1{border:none;background-color:#999;color:white;}
+        body .layui-layer-alert .layui-layer-btn .layui-layer-btn0{border:none;background-color:#f95c00;color:white;}
+
+        body .layui-layer-process .layui-layer-title{background:darkorange; color:#fff; border: none;}
+        body .layui-layer-process .layui-layer-btn{border-top:1px solid #E9E7E7}
+        body .layui-layer-process .layui-layer-btn a{background:#333;}
+        body .layui-layer-process .layui-layer-btn .layui-layer-btn1{background:#999;color:white;}
+        body .layui-layer-process .layui-layer-btn .layui-layer-btn0{border:none;background-color:#35d235;color:white;}
+
+        body .layui-layer-msg .layui-layer-btn1{background-color: #6c757d;border:none;}
+
+        .select2-container--default .select2-results__option--highlighted[aria-selected]{background-color: #1E9FFF;}
+        
+        .i-am-new{z-index:20000000 !important;}

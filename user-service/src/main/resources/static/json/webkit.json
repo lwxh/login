@@ -1,0 +1,223 @@
+{
+    "type": "force",
+    "categories": [
+        {
+            "name": "优秀",
+            "keyword": {},
+            "base": "HTMLElement",
+            "itemStyle": {
+                "normal": {
+                    "brushType": "both",
+                    "strokeColor": "#5182ab",
+                    "lineWidth": 5
+                }
+            }
+        },
+        {
+            "name": "普通",
+            "keyword": {},
+            "base": "WebGLRenderingContext",
+            "itemStyle": {
+                "normal": {
+                    "brushType": "both",
+                    "strokeColor": "#5182ab",
+                    "lineWidth": 5
+                }
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "name": "AA1111",
+            "value": 1,
+            "category": 0
+        },
+        {
+            "name": "AA1112",
+            "value": 1,
+            "category": 0
+        },
+        {
+            "name": "AA1113",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1114",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1115",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1116",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1117",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1118",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1119",
+            "value": 1,
+            "category": 1
+        },
+        {
+            "name": "AA1120",
+            "value": 1,
+            "category": 1
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 3
+        },
+        {
+            "source": 0,
+            "target": 4
+        },
+        {
+            "source": 0,
+            "target": 5
+        },
+        {
+            "source": 0,
+            "target": 6
+        },
+        {
+            "source": 0,
+            "target": 7
+        },
+        {
+            "source": 0,
+            "target": 8
+        },
+        {
+            "source": 0,
+            "target": 9
+        },
+        {
+            "source": 1,
+            "target": 2
+        },
+        {
+            "source": 1,
+            "target": 3
+        },
+        {
+            "source": 1,
+            "target": 4
+        },
+        {
+            "source": 1,
+            "target": 5
+        },
+        {
+            "source": 1,
+            "target": 6
+        },
+        {
+            "source": 1,
+            "target": 7
+        },
+        {
+            "source": 1,
+            "target": 8
+        },
+        {
+            "source": 1,
+            "target": 9
+        },
+        {
+            "source": 2,
+            "target": 3
+        },
+        {
+            "source": 2,
+            "target": 4
+        },
+        {
+            "source": 2,
+            "target": 5
+        },
+        {
+            "source": 2,
+            "target": 6
+        },
+        {
+            "source": 2,
+            "target": 7
+        },
+        {
+            "source": 2,
+            "target": 8
+        },
+        {
+            "source": 2,
+            "target": 9
+        },
+        {
+            "source": 3,
+            "target": 4
+        },
+        {
+            "source": 3,
+            "target": 5
+        },
+        {
+            "source": 3,
+            "target": 6
+        },
+        {
+            "source": 3,
+            "target": 7
+        },
+        {
+            "source": 3,
+            "target": 8
+        },
+        {
+            "source": 3,
+            "target": 9
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 5,
+            "target": 6
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 7,
+            "target": 8
+        },
+        {
+            "source": 8,
+            "target": 9
+        }
+    ]
+}

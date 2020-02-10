@@ -1,0 +1,338 @@
+/*整体风格部分*/
+
+.rs-select2--light .select2-container--default .select2-selection--single {
+    border-radius: 6px;
+    height: 39px;
+}
+.rs-select2--light .select2-container--default  .select2-selection--single .select2-selection__arrow {
+    height: 40px;
+    top: 0;
+    right: -1px;
+    bottom: 0px;
+    width: 30px;
+    background: #3b69ff;
+    border-radius: 0 6px 6px 0;
+}
+
+.layui-form-item .layui-inline {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.container {
+    width: 100%;
+    /* padding-right: 0px; */
+    padding-left: 0px;
+    /* margin-right: auto; */
+    margin-left: 0px;
+}
+
+.container-fluid {
+    width: 100%;
+    /* padding-right: 0px; */
+    padding-left: 0px;
+    /* margin-right: auto; */
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.layui-btn {
+    display: inline-block;
+    height: 40px;
+    line-height: 10px;
+    margin-top: -6px;
+    padding: 0 18px;
+    background-color: #3b69ff;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #3b69ff;
+}
+
+.main-content {
+    padding-top: 110px;
+    padding-left: 0px;
+    min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        padding-top: 50px;
+    }
+}
+
+.menu-sidebar {
+    width: 250px;
+    position: fixed;
+    left: 25px;
+    top: 110px;
+    bottom: 25px;
+    background: #fff;
+    overflow-y: visible;
+}
+
+.header-desktop {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0px;
+    height: 75px;
+    z-index: 3;
+}
+
+/*本页部分*/
+
+.replay-form-label-start {
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    line-height: 20px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-input-inline-start {
+    float: left;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px 6px 6px 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-select-start {
+    width: 140px;
+}
+
+
+.replay-form-label-end {
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    line-height: 20px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-input-inline-end {
+    float: left;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px 6px 6px 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-select-end {
+    width: 140px;
+}
+
+.replay-form-label-operator {
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    line-height: 20px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-input-inline-operator {
+    float: left;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px 6px 6px 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-select-operator {
+    width: 140px;
+}
+
+.replay-form-label-time {
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-input-inline-time {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.layui-input {
+    font-size: 14px;
+}
+.au-card-manager {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* padding-right: 5px; */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: auto;
+}
+
+.au-card-airman {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    /* padding-right: 5px; */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: auto;
+}
+
+.recent-report {
+    /* padding-bottom: 15px; */
+    margin-bottom: 10px;
+    padding:0px
+}
+
+.au-card-radio {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: auto;
+}
+
+.recent-report-radio {
+    /* padding-bottom: 15px; */
+    margin-bottom: 0px;
+}
+
+.col-lg-6 {
+    padding: 0px;
+}
+
+.col-lg-12 {
+    padding: 0px;
+}
+
+.row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.replay-col-3{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.replay-col-6{
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.replay-col-12{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    width: 90px;
+}
+
+.btn-success {
+    width: 90px;
+}
+
+.replay-form-label-cluster {
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    /* width: 80px; */
+    /* font-weight: bold; */
+    /* font-family:"SimHei"; */
+    line-height: 20px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-input-inline-cluster {
+    float: left;
+    /* width: 60px; */
+    /* height:100px; */
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px 6px 6px 2px;
+    border-color: #3b69ff;
+    background: #fff;
+}
+
+.replay-select-cluster {
+    width: 140px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    width: 105px;
+}
+
+.select2 .select2-container .select2-container--default{
+ width: 105px;
+}

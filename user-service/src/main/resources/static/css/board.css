@@ -1,0 +1,388 @@
+html {
+    font-size: 4vw;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.25rem;
+    line-height: 1.625;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*整体风格部分*/
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.replay-main-content {
+    padding-top: 1.25rem;
+    padding-left: 0;
+    min-height: 100vh;
+}
+
+.repaly-page-container {
+    background: #e5e5e5;
+    padding-left: 4rem;
+}
+
+/* 头部栏 */
+.replay-header {
+    background: #f5f5f5;
+    position: fixed;
+    width: 100%;
+    height: 1rem;
+    vertical-align: middle;
+    /* 浮于顶层 */
+    z-index: 3;
+}
+
+.replay-title {
+    margin:auto 0; 
+    width: 6rem;
+}
+.replay-header-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.replay-header-wrap {
+    /* 左右两边居中 */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+}
+
+.replay-account-wrap {
+    position: relative;
+}
+
+.replay-account-item {
+    cursor: pointer;
+}
+
+.replay-account-item .image {
+    width: 0.75rem;
+    float: left;
+    border-radius: 0.05rem;
+}
+
+.replay-account-item > .content {
+    margin-left: 0.75rem;
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
+    height: 0.75rem;
+    font-size: 0.25rem;
+}
+
+.replay-account-item > .content > a {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 0.25rem;
+}
+
+.replay-account-item > .content > a:after {
+    font-family: "Material-Design-Iconic-Font";
+    font-weight: 500;
+    content: '\f2f9';
+    display: inline-block;
+    font-size: 0.25rem;
+    line-height: normal;
+    margin-left: 0.1rem;
+}
+
+.replay-account-item > .content > a:hover {
+    color: #666;
+}
+
+.replay-account-dropdown {
+    min-width: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transition: all 0.4s ease;
+    transform-origin: right top;
+    z-index: 3;
+}
+
+.replay-account-dropdown:after {
+    content: '';
+    display: block;
+    width: 0.25rem;
+    border-bottom: 0.125rem solid #fff;
+    border-top: 0.125rem solid transparent;
+    border-left: 0.125rem solid transparent;
+    border-right: 0.125rem solid transparent;
+    position: absolute;
+    top: -0.25rem;
+    right: 0.5rem;
+}
+
+.replay-account-dropdown .info {
+    padding: 0.4rem;
+    border-bottom: 0.01rem solid #f2f2f2;
+}
+
+.replay-account-dropdown .info .image {
+    float: left;
+    height: 1rem;
+    width: 1rem;
+    overflow: hidden;
+    border-radius: 0.02rem;
+}
+
+.replay-account-dropdown .info .content {
+    margin-left: 1rem;
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
+    height: 1rem;
+}
+
+.replay-account-dropdown .info .content .name {
+    line-height: calc(20/16);
+}
+
+.replay-account-dropdown .info .content .name a {
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.replay-account-dropdown .info .content .name a:hover {
+    color: #666;
+}
+
+.replay-account-dropdown .info .content .email {
+    font-size: 0.25rem;
+    color: #999;
+    line-height: calc(20/13);
+}
+
+.account-dropdown__item a {
+    display: block;
+    color: #333;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.25rem;
+}
+
+.account-dropdown__item a:hover {
+    background: #4272d7;
+    color: #fff;
+}
+
+.account-dropdown__item a i {
+    line-height: normal;
+    margin-right: 0.25rem;
+    font-size: 0.3rem;
+    vertical-align: middle;
+}
+
+.account-dropdown__body {
+    padding: 0.25rem 0;
+}
+
+.account-dropdown__footer {
+    border-top: 0.01rem solid #f2f2f2;
+}
+
+.account-dropdown__footer a {
+    display: block;
+    color: #333;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.25rem;
+}
+
+.account-dropdown__footer a:hover {
+    background: #4272d7;
+    color: #fff;
+}
+
+.account-dropdown__footer a i {
+    line-height: normal;
+    margin-right: 0.25rem;
+    font-size: 0.3rem;
+    vertical-align: middle;
+}
+
+/* 左侧菜单栏 */
+
+.menu-sidebar {
+    width: 3.5rem;
+    position: fixed;
+    left: 0.25rem;
+    top: 1.25rem;
+    bottom: 0.25rem;
+    background: #fff;
+    overflow-y: visible;
+}
+
+.navbar-sidebar {
+    padding: 0.5rem;
+}
+
+.navbar-sidebar .navbar__list li a {
+    display: block;
+    color: #555;
+    font-size: 0.25rem;
+    padding: 0 0 0.5rem 0;
+}
+
+.navbar-sidebar .navbar__list li a i {
+    margin-right: 0.1rem;
+}
+
+
+/* select2下拉框设置 */
+
+.select2-container {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    border-radius: 0.1rem;
+}
+
+.select2-container .select2-selection--single {
+    font-size: 0.25rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    /* height: 28px; */
+    height: 100%;
+    border-radius: 0.05rem;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    /* border:1px solid #aaa; */
+    border:0.01rem solid #3b69ff;
+    /* border-radius: 4px; */
+    border-radius: 0.05rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    /* line-height: 28px; */
+    line-height: normal;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    /* height: 26px; */
+    height: 100%;
+    position: absolute;
+    /* top: 1px; */
+    top: 0;
+    /* right: 1px; */  
+    right: 0;
+    width: 0.4rem;
+    background-color: #3b69ff;
+    border-radius: 0 0.05rem 0.05rem 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    /* border-width: 5px 4px 0 4px; */
+    border-width: 0.1rem 0.1rem 0 0.1rem;
+    /* margin-left: -4px; */
+    margin-left: -0.1rem;
+    /* margin-top: -2px; */
+    margin-top: -0.05rem;
+}
+
+.select2-dropdown {
+    border:0.01rem solid #aaa;
+    border-radius: 0.05rem;
+}
+
+.select2-search--dropdown .select2-search__field{
+    padding: 0.1rem;
+    height: 0.5rem;
+    font-size: 0.25rem;
+}
+
+.select2-search--dropdown {
+    display: block;
+    padding: 0.1rem;
+}
+
+.select2-results__option {
+    padding: 0.1rem;
+    font-size: 0.25rem;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #3b69ff;
+}
+
+/* label设置 */
+label{
+    margin: 0;
+}
+
+.replay-form-label {
+    font-size: 0.25rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-radius: 0.05rem;
+    border-color: #3b69ff;
+    height: 100%;
+    line-height: normal;
+    background: #fff;
+    vertical-align: middle;
+}
+
+
+/*layui设置*/
+
+.layui-input {
+    font-size: 0.25rem;
+    height: auto;
+    line-height: normal;
+    padding: 0.1rem;
+    width: fit-content;
+    display: inline-block;
+    border-width: 0.01rem;
+    border-radius: 0.05rem;
+    vertical-align: middle;
+}
+
+.layui-btn {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    padding: 0.11rem 0.2rem 0.11rem 0.2rem;
+    background-color: #3b69ff;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.25rem;
+    border: none;
+    border-radius: 0.05rem;
+    cursor: pointer;
+}
+
+.replay-card-table {
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.1rem;
+    background: #fff;
+    overflow: hidden;
+}
+

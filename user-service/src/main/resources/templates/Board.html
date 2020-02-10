@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=2200px, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>收放舱复盘可视化原型系统</title>
+
+    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/bootstrap2.css" rel="stylesheet"/>
+    <link href="../static/css/dashboard.css" rel="stylesheet"/>
+    <link href="../static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/layui/2.5.5/css/layui.css" rel="stylesheet"/>
+    <link href="../static/vendor/fontawesome/5.11.2/css/all.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/theme.css" rel="stylesheet" media="all">
+    <link href="../static/css/custom.css" rel="stylesheet" media="all">
+<body>
+
+<div id="page-wrapper">
+
+    <!-- HEADER DESKTOP-->
+    <header class="replay-header">
+        <div class="replay-header-wrap">
+            <a href="#" class="replay-title">
+                <img src="../static/images/logo.png">
+            </a>
+            <div class="replay-header-button">
+                <div class="replay-account-wrap">
+                    <div class="replay-account-item clearfix js-item-menu">
+                        <div class="image">
+                            <img src="../static/images/icon/avatar-01.jpg" alt="John Doe" />
+                        </div>
+                        <div class="content">
+                            <a class="js-acc-btn" href="#">john doe</a>
+                        </div>
+                        <div class="replay-account-dropdown js-dropdown">
+                            <div class="info clearfix">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="../static/images/icon/avatar-01.jpg" alt="John Doe" />
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h5 class="name">
+                                        <a href="#">john doe</a>
+                                    </h5>
+                                    <span class="email">johndoe@example.com</span>
+                                </div>
+                            </div>
+                            <div class="account-dropdown__body">
+                                <div class="account-dropdown__item">
+                                    <a href="#">
+                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="#">
+                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="#">
+                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                </div>
+                            </div>
+                            <div class="account-dropdown__footer">
+                                <a href="#">
+                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER DESKTOP-->
+
+    <!-- MENU SIDEBAR-->
+    <aside class="menu-sidebar">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li>
+                        <a href="Board.html">
+                            <i class="fas fa-users"></i>管理员复盘</a>
+                    </li>
+                    <li>
+                        <a href="./manager.html">
+                            <i class="fas fa-plane-departure"></i>航线复盘</a>
+                    </li>
+                    <li>
+                        <a href="./flight.html">
+                            <i class="fas fa-plane"></i>航班复盘</a>
+                    </li>
+                    <li>
+                        <a href="form.html">
+                            <i class="fas fa-user-cog"></i>用户中心</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- END MENU SIDEBAR-->
+
+    <!-- PAGE CONTAINER-->
+    <div class="repaly-page-container">
+
+        <!-- MAIN CONTENT-->
+        <div class="replay-main-content">
+                <div class="container-fluid">
+                    <p>
+                        <span style="color:#2c2c2c;font-size:0.3rem;font-weight: bold">您当前所处页面：</span>
+                        <span style="color:#3b69ff;font-size:0.3rem;font-weight: bold">管理员复盘</span>
+                    </p>
+                </div>
+
+                <div class="container-fluid">
+                    <label class="replay-form-label">起点</label>
+                    <select class="js-select2" id="selectStart"></select>
+                    <label class="replay-form-label">终点</label>
+                    <select class="js-select2" id="selectEnd"></select>
+                    <label class="replay-form-label">管理员</label>
+                    <select class="js-select2" id="selectOperator"></select>
+                    <label class="replay-form-label">日期范围</label>
+                    <input id="txtDateRange" type="text" class="replay-input" autocomplete="off">
+                    <label class="replay-form-label" style=>时间段</label>
+                    <select class="js-select2" id="selectTime"></select>
+                    <button id="btnSearch" type="button" class="replay-btn-blue">查询</button>
+                </div>
+
+                <!-- DATA TABLE-->
+                <div class="container-fluid">
+                    <div class="replay-card-12">
+                        <div class="col-12">
+                            <table id="operatorTable" class="table-striped" lay-filter="operatorTable"></table>
+                        </div>
+                    </div>
+
+                    <div class="replay-card-12">
+                        <div class="col-12">
+                            <h4>三大热门航线管理员概况 北京——上海</h4>
+                            <hr>
+                            <h5>优秀管理员推荐</h5>
+                            <table id="No1BestOperatorTable" class="table-striped" lay-filter="No1BestOperatorTable"></table>
+                            <hr>
+                            <h5>预警管理员推荐</h5>
+                            <table id="No1BadOperatorTable" class="table-striped" lay-filter="No1BadOperatorTable"></table>
+                        </div>
+                    </div>
+
+                    <div class="replay-card-12">
+                        <div class="col-12">
+                            <h4>三大热门航线管理员概况 北京——广州</h4>
+                            <hr>
+                            <h5>优秀管理员推荐</h5>
+                            <table id="No2BestOperatorTable" class="table-striped" lay-filter="No2BestOperatorTable"></table>
+                            <hr>
+                            <h5>预警管理员推荐</h5>
+                            <table id="No2BadOperatorTable" class="table-striped" lay-filter="No2BadOperatorTable"></table>
+                        </div>
+                    </div>
+
+                    <div class="replay-card-12">
+                        <div class="col-12">
+                            <h4>三大热门航线管理员概况 上海——广州</h4>
+                            <hr>
+                            <h5>优秀管理员推荐</h5>
+                            <table id="No3BestOperatorTable" class="table-striped" lay-filter="No3BestOperatorTable"></table>
+                            <hr>
+                            <h5>预警管理员推荐</h5>
+                            <table id="No3BadOperatorTable" class="table-striped" lay-filter="No3BadOperatorTable"></table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- END MAIN CONTENT-->
+        <!-- END PAGE CONTAINER-->
+    </div>
+
+    <!-- Main JS-->
+
+
+    <script src="../static/vendor/jquery/3.4.1/jquery.min.js" ></script>
+    <script>window.jQuery || document.write('<script src="webjars/jquery/3.4.1/jquery.slim.js"><\/script>')</script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/feather.js"></script>
+    <!--    <script src="/js/dashboard.js"></script>-->
+    <script src="../static/vendor/vue/2.6.10/vue.min.js"></script>
+    <script src="../static/vendor/echarts/4.4.0/echarts.min.js"></script>
+    <script src="../static/vendor/select2/select2.min.js"></script>
+    <script src="../static/vendor/moment/moment.min.js"></script>
+    <script src="../static/vendor/layui/2.5.5/layui.js"></script>
+    <script src="../static/vendor/animsition/animsition.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/board.js"></script>
+    <script>
+        let token
+        $('body').css('display','none') //可以提前把页面设置为display:none,这样没人能看到你的页面，防止有时候验证延迟，导致可以看到一部分页面内容
+        $(function () {
+            token = localStorage.getItem('token')  // 从localStroge拿到token
+            $.ajax({
+                type: 'GET',
+                url: '/Board',   // 请求验证jwt的路由
+                headers: { 'Authorization': 'Bearer '+token},    //这里有个坑点巨坑，在token前要加上'Bearer '这个是表示 token的类型，记住Bearer后面必须有一个空格，必须有，一定别忘了，不然会失败。只需要发送给后台，后台的jwt模块会自己验证，验证失败会报Authorization错误，验证成功将执行你的路由请求操作。
+                contentType: "application/x-www-form-urlencoded",
+                success:function (res) {
+                    //因为JWT是先验证再执行之后的路由操作，所以你请求成功JWT验证成功了才会返回参数，这里我后台返回的ok,前面后台代码有写
+                    if (res=="ok"){
+                        $('body').css('display','block') //说明验证成功，验证成功再显示页面
+                    }
+
+                },
+                error:function (error) {
+                    location.href='http://localhost:9090/index'  //验证失败跳转回登录页面,ok大功告成
+                }
+            })
+        })
+    </script>
+</div>
+</body>
+
+</html>
