@@ -19,7 +19,7 @@ $(function () {
             success: function (data) {
                 //save token
                 localStorage.setItem("token",data.jwt);
-                location.href='http://localhost:9090/Board'
+                location.href='http://localhost:9090/index'
 
             }
         });

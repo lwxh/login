@@ -28,7 +28,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
                 .antMatchers("/","/index","/user/index","/user/login","/user/register","/login","/css/**","/fonts/**","/images/**","/js/**","/vendor/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().loginPage("/index")
+                .formLogin().loginPage("/")
                 .permitAll();
     }
 
